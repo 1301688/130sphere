@@ -1,16 +1,11 @@
 import React from "react"
 //import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 const Lucky = ({ data, location }) => {
   return (
     <Layout>
-      <SEO
-        pagetitle="Luckyについて"
-        pagedesc="Luckyについての情報を発信しているSpheRe"
-        pagepath={location.pathname}
-      />
       <h1>Lucky</h1>
       <h2>I'm 130, React Developer</h2>
     </Layout>
@@ -18,3 +13,9 @@ const Lucky = ({ data, location }) => {
 }
 
 export default Lucky
+
+// <SEO
+//   pagetitle="Luckyについて"
+//   pagedesc="Luckyについての情報を発信しているSpheRe"
+//   pagepath={location.pathname}
+// />

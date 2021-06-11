@@ -6,7 +6,7 @@ import { Twemoji } from "react-emoji-render"
 import styled from "styled-components"
 import Spherecard from "../components/spherecard"
 
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 const Emoji = styled(Twemoji)`
   font-size: 30px;
@@ -30,7 +30,6 @@ class CategoryTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={categoryName}>
-        <SEO title={categoryName} />
         <h1>{categoryName}</h1>
         {posts.map(({ node }) => {
           return (
@@ -79,3 +78,5 @@ export const pageQuery = graphql`
     }
   }
 `
+// 33から下
+// <SEO title={categoryName} />

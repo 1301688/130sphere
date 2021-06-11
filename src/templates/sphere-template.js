@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import { Twemoji } from "react-emoji-render"
 import styled from "styled-components"
 
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 
 const Emoji = styled(Twemoji)`
   font-size: 30px;
@@ -18,11 +18,6 @@ const Sphere = ({ data, location, pageContext }) => {
   return (
     <div>
       <Layout>
-        <SEO
-          pagetitle="SpheRe"
-          pagedesc="SpheReを集める"
-          pagepath={location.pathname}
-        />
         <section className="content list">
           <div className="container">
             <h1 className="bar">Power SpheRe</h1>
@@ -30,12 +25,7 @@ const Sphere = ({ data, location, pageContext }) => {
               {data.allMarkdownRemark.edges.map(({ node }) => (
                 <article className="sphere" key={node.id}>
                   <Link to={node.fields.slug}>
-                    <figure>
-                      <Img
-                        fixed={node.frontmatter.topImage.childImageSharp.fixed}
-                        alt={node.frontmatter.description}
-                      />
-                    </figure>
+                    <figure></figure>
                     <h3>{node.frontmatter.title}</h3>
                   </Link>
                 </article>
@@ -113,3 +103,10 @@ export default Sphere
 //     }
 //   }
 // }
+
+// 21から
+// <SEO
+//           pagetitle="SpheRe"
+//           pagedesc="SpheReを集める"
+//           pagepath={location.pathname}
+//         />

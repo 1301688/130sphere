@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import { Twemoji } from "react-emoji-render"
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+// import SEO from "../components/SEO"
 import RelatedSphere from "../components/RelatedSphere"
 import Spherelabel from "../components/Spherelabel"
 import Followbudge from "../components/FollowBudge"
@@ -150,11 +150,6 @@ class SpherePostTemplate extends React.Component {
     } = post.frontmatter
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          pagetitle={title}
-          pagedesc={description || post.excerpt}
-          pagepath={this.props.location.pathname}
-        />
         <Content>
           <ArticleWrapper>
             <HeroImage text={emoji || "🔮"} />
@@ -226,3 +221,9 @@ export const query = graphql`
     }
   }
 `
+// 153から
+// <SEO
+//           pagetitle={title}
+//           pagedesc={description || post.excerpt}
+//           pagepath={this.props.location.pathname}
+//         />

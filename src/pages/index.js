@@ -8,7 +8,7 @@ import Theme from "../styles/theme"
 import Layout from "../components/Layout"
 import SphereCategory from "../components/Spherecategory"
 import Spherecard from "../components/Spherecard"
-import SEO from "../components/SEO"
+// import SEO from "../components/SEO"
 
 const Emoji = styled(Twemoji)`
   font-size: 30px;
@@ -27,11 +27,6 @@ class Board extends React.Component {
     return (
       <ThemeProvider theme={Theme}>
         <Layout>
-          <SEO
-            pagetitle="Boardについて" //siteMetadataから取ったほうが良さそう
-            pagedesc="Boardについての情報を発信しているSpheRe"
-            pagepath={location.pathname}
-          />
           <h1>SphereBoard</h1>
           <SphereCategory location={location} />
           <GridContainer>
@@ -92,3 +87,9 @@ export const query = graphql`
     }
   }
 `
+// 30の下から
+// <SEO
+//             pagetitle="Boardについて" //siteMetadataから取ったほうが良さそう
+//             pagedesc="Boardについての情報を発信しているSpheRe"
+//             pagepath={location.pathname}
+//           />
