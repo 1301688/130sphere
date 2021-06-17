@@ -91,14 +91,6 @@ const Bio = () => {
         </BioHeader>
         <BioMain>
           <BioText className="biotext">One creation a day</BioText>
-          <p>2021から</p>
-          <p>名古屋で</p>
-          <p>３児の父が</p>
-          <p>プログラミングを始めました</p>
-          <p>2021年6月から</p>
-          <p>独学で</p>
-          <p>学習内容を記録して</p>
-          <p>プログラマーに転職します</p>
         </BioMain>
       </BioWrapper>
     </AsideWrapper>
