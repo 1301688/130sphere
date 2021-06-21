@@ -49,30 +49,30 @@ $ yarn global add gatsby-cli
 ```
 $ gatsby -v
 ```
+バージョンが返ってくればOK
+#### Gatsbyのプロジェクト作成
+- GatsbyのスターターライブラリからGatsbyの新規プロジェクトを作成する  
 
-
-
-
-
-
-## Gatsbyのスターターの調べかた
-#### スターターってなに？
-  - すでにGatsbyで作られているプロジェクトのこと
-  - 良い感じのイメージをGatsby公式で用意してくれている
-  - 自分の好みに合わせて選択して使用できる
-#### スターターについて調べた参考サイト
-  - Gatsby公式  https://www.gatsbyjs.com/starters/?
-  - もっと詳しく　https://dvg.179.jp/201803-gatsby-starter/
-#### 調べた結果
-  - スターターがありすぎて全て網羅するのは不可能
-#### 選び方
-  - 目的に対して一番最適なスターターを選定すること
-  
-#### 探し方
-  - こちらを参照　https://zenn.dev/tyaahan/articles/cf7aec1a6d90c8
-#### 結論　
-  - Gatsby公式で用意されているスターターでれば問題なし
-  - 後からカスタマイズできるので、問題なし
-
+- スターターライブラリとその調べ方
+>- すでにGatsbyで作られているプロジェクトのこと
+>- 良い感じのイメージをGatsby公式で用意してくれている
+>- 自分の好みに合わせて選択して使用できる
+- スターターについて調べた参考サイト
+>- [Gatsby公式](https://www.gatsbyjs.com/starters/?)
+>- [Gatsbyのスターター比較](https://dvg.179.jp/201803-gatsby-starter/)
+>- [Gatsbyのスターター選び方](https://zenn.dev/tyaahan/articles/cf7aec1a6d90c8)
+- スターターライブラリを調べた結果
+>- スターターがありすぎて全て網羅するのは不可能
+- 選び方のコツ
+>- 目的に対して一番最適なスターターを選定すること
+>- 使用したい技術に合わせて選定すること
+- 結論　
+>- Gatsby公式で用意されているスターターでればOK
+>- スターターライブラリのコードを参考に後からカスタマイズできるからOK
+>- 一番最初はプラグインなしの最小プロジェクトから実行する
+▼ Gatsbyプロジェクト　スターターライブラリ｀HelloWorld｀
+```
+$ gatsby new {$`プロジェクトのファイル名`} https://github.com/gatsbyjs/gatsby-starter-hello-world
+```
 
 

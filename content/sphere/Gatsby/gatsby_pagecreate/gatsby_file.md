@@ -1,15 +1,15 @@
 ---
-title: "Gatsby_File"
-date: "2021-6-13"
+title: "③Gatsbyのページ作成"
+date: "2021-6-22"
 updateDate: ""
 type: ""
 category: "gatsby"
-description: "Gatsbyのfile構成"
+description: "Gatsbyのページ作成"
 emoji: "🍃"
 topImage: ""
 ---
 
-## ファイル構成
+#### Gatsbyのプロジェクト構成
 
 - Gatsby
   - project 上のファイルは node で管理
@@ -42,5 +42,11 @@ topImage: ""
 - Link
   - リテラル記述か graphql で動的に設定
   - 各ページで slug を node.js で作成
+
+  #### Gatsbyのページ編集
+
+  #### Gatsbyのページ追加
+
+  #### 
 
 
