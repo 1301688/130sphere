@@ -22,7 +22,7 @@ module.exports = {
       {
         name: "JavaScript",
         slug: "javascript",
-        color: "#F0EEB0",
+        color: "#77c5fc",
       },
       {
         name: "CSS",
