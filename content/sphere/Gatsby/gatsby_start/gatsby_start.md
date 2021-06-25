@@ -74,5 +74,7 @@ $ gatsby -v
 ```
 $ gatsby new {$`プロジェクトのファイル名`} https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
+>- gatsby newでcloneからはじめることも出来るので
+>  慣れたら雛形をつくっておくと複数のプロジェクト作成ができて便利かも
 
 

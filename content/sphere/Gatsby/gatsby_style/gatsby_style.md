@@ -91,12 +91,12 @@ export default function Home() {
 }
 ```
 2. 安定したクラス名で適応させる場合..Gatsby公式はこちら
-  - stylesディレクトリにCSSファイルを作成
+  - src/stylesディレクトリにCSSファイルを作成
   - CSSファイルにクラス名とスタイルを書く
   - 表示ページsrc/pagesディレクトリ内のファイルで    
-    作ったCSSファイルをインポートして適応
+    src/stylesディレクトリで作ったCSSファイルをインポートして適応
 ```
-// styles/class.cssファイル
+// src/styles/class.cssファイル
 .container {
   color: red;
 }
@@ -104,7 +104,7 @@ export default function Home() {
 ```
 // src/pages/index.jsファイル
 import styled from "styled-components"
-import "../../styles/class.css"
+import "../styles/class.css"
 
 const Container = styled.div`
   margin: auto;
