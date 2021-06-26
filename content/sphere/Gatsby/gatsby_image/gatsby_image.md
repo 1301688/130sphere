@@ -23,14 +23,14 @@ topImage: ""
 >- OGP（metaData）※後日SEOの時		
 >- 場所によって設定方法が違うことに注意する		
 #### 画像の表示方法
-- 基本的な表示方法は大きく分けて4つ
+- 基本的な表示方法は大きく分けて5つ
 >- リテラル記法を利用する方法
 > ①ディレクトリからファイルをimportして表示  
 > ②staticディレクトリへのファイル保存して表示
 >- GraphQLのquery結果を利用する方法(パラメーター)
 > ③GraphQLによる画像の表示 
-> ④Gatsby-pluginを利用した画像の設定
-
+> ④Gatsby-imageプラグインを利用した画像の設定
+> ⑤Gatsby-plugin-imageプラグインを利用した画像の設定
 #### 画像の表示方法｜リテラル記法系
 ①ディレクトリからファイルをimportして表示▼
 > 1. root/src/imagesに画像ファイルを置く
@@ -70,9 +70,10 @@ export default function Home() {
 }
 
 ```
+<!-- ここから下③、④はプラグインインストール後、実装してコードテストすること -->
 #### 画像の表示方法｜GraphQL:パラメーター記法系
 ③GraphQLによる画像の表示
-> 1. gatsby-source-filesystemをインストールする  
+> 1. gatsby-source-filesystemをインストールする 
 > 2. GraphiQLでqueryを実行してローカルファイルの情報を取得  
 > 3. 画像ファイルもローカルファイルの一種なのでGraphiQLの  
 > queryを実行するとimagesディレクトリに保存したファイル情報を  
@@ -86,7 +87,7 @@ export default function Home() {
 import React from "react"
 import { graphql } from "gatsby"
 
-export default function Home({ datan }) {
+export default function Home({ data }) {
   return (
       <div>Hello isao!!</div>
       <img src={data.file.publicURL} alt="test" />
@@ -119,26 +120,119 @@ const Header = () => {
 }
 ```
 
+④Gatsby-imageプラグインを利用した画像の設定
+- Gatsbyには画像の最適化とパフォーマンス向上させるための重要なプラグインがある  
+- プラグインを利用することで手間のかかる画像最適化の作業を自動化することが出来る
+> 1. Gatsby-imageプラグインを利用するために下記プラグインをインストール
+>- yarn add gatsby-transformer-sharp
+>- yarn add gatsby-plugin-sharp
+>- yarn add gatsby-image
+> 2. gatsby-config.jsファイルに設定する
+> 3. 設定完了後、gatsby-developコマンドを実行
+> 4. GraphiQLにallimageSharpとimageSharpが追加されいることを確認
+> 5. GraphiQLのqueryでimagesファイルに保存されているsample.svgの  
+> 情報が取得できているか確認 ※queryの項目指定方法は多種多様
+> 6. gatsby-imageを利用するためgatsby-imageをimportする
+> 7. コンポーネントにqueryとJSXを記述して表示されることを確認
+gatsby-config.jsの設定▼  
+※gatsby-imageはgatsby-config.jsファイルで設定する必要はない
+```
+plugins: [
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/images`,
+    }
+  }
+]
+```
+ページコンポーネントの場合▼
+```
+import React from "react"
+import Img from "gatsby-image"
 
+export default function Home({ data }) {
+  return (
+      <div>Hello isao!!</div>
+      <Img fixed={data.testFixed.childImageSharp.fixed} alt="samplefixed" />
+      <Img fluid={data.testFluid.childImageSharp.fluid} alt="samplefluid" />
+  )
+}
 
-④Gatsby-pluginを利用した画像の設定
-- ※マークダウン１つは後日
-- ベタ書きする(①、③)か、パラメタにしてGraphQLで取る（②、④）か			
-- パラメタにして取る場合は常にデータが存在することを想定して			
-- プログラムすることでエラーハンドリング
-後日※GraphQLによる画像の取得
-偽日※Gatsby-image,Gatsby-plugin-imageプラグインを利用した画像設定
-#### faviconを格納するディレクトリまたはファイル
-- 表示させたいfavicon.icoデータをGatsbyプロジェクトで読み取り可能な場所に格納する
-- faviconとはfaivariticonの略のよう
->- root/staticディレクトリ
->- gatsby-config.jsファイル
+export default query = graphql`
+  {
+    sampleFixed: file(relativePath: {eq: "sample.svg"}) {
+      childImageSHarp {
+        fixed(width: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    sampleFluid: file(relativePath: {eq: "sample.svg"}) {
+      childImageSHarp {
+        fluid(maxWidth: 300) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+```
+コンポーネントの場合▼
+```
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+
+const Header = () => {
+  const data = useStaticQuery(
+    graphql`
+      {
+        sampleFixed: file(relativePath: {eq: "sample.svg"}) {
+          childImageSHarp {
+            fixed(width: 300) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+        sampleFluid: file(relativePath: {eq: "sample.svg"}) {
+          childImageSHarp {
+            fluid(maxWidth: 300) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `
+  )
+}
+```
+<!-- 上記queryは間違えているので、graphqlインストール時に実装テスト必要 -->
+⑤Gatsby-plugin-imageプラグインを利用した画像の設定 
+※これ詰まりそう。。。実装時まとめに変更　gatsby-imageより良いと思われる
+
+https://typememo.jp/tech/gatsby-image-evolution-gatsby-plugin-image/
+
+https://software.pitang1965.com/2021/03/25/migrating-from-gatsby-image-to-gatsby-plugin-image/
+
+https://zenn.dev/kaito18/articles/1b7a813375ac69
+
+インストール時に実装、理解が出来るようにする
+
 #### faviconの作成方法
 - favicon.icoファイルの作成方法は情報が少ないため簡単な方法を記述
 >- gatsby-plugin-faviconsプラグインで作成する
 >  SVGをファビコンに出来る=SVGをdrawioでつくって変換出来るので良い
 >  おそらく他にも良い方法があるが、現在はこの方法で作成する
 >- Webにあるいずれかのサイトで作成する
+#### faviconを格納するディレクトリまたはファイル
+- 表示させたいfavicon.icoデータをGatsbyプロジェクトで読み取り可能な場所に格納する
+- faviconとはfaivariticonの略のよう
+>- root/staticディレクトリ
+>- gatsby-config.jsファイル
 #### faviconを設定する
 - 作成したfavicon.icoファイルをGatsbyプロジェクトで読み取り表示出来るように設定する
 >- gatsby-plugin-manifestもしくはgatsby-plugin-react-helmetどちらがSEO必須か調べた結果
@@ -150,6 +244,11 @@ const Header = () => {
 ※ブラウザで一度作成されたファビコンは残り続けるので、明示的に削除する必要性がある
 - catさんはstatic,manifest両方に設定しているが、favicon.icoのほうはあやしい
 　→ブラウザのキャッシュから考えるがベストだが嵌りそうなのでつぎ
+
+※後日系
+※マークダウン１つは後日			
+- パラメタ系にして取る場合は常にデータが存在することを想定して			
+- プログラムすることでエラーハンドリング
 
 
 　
