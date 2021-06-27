@@ -235,8 +235,25 @@ https://zenn.dev/kaito18/articles/1b7a813375ac69
 >- gatsby-config.jsファイル
 #### faviconを設定する
 - 作成したfavicon.icoファイルをGatsbyプロジェクトで読み取り表示出来るように設定する
->- gatsby-plugin-manifestもしくはgatsby-plugin-react-helmetどちらがSEO必須か調べた結果
+>- gatsby-plugin-manifestもしくはgatsby-plugin-react-helmetどちらがSEO必須か調べた結果 
 >  catさんのconfig,jsを見て判断する && サイトを参考にする && bookを参考にする
+答え　catも公式もhelmet
+
+設定方法
+①staticディレクトリに配置する
+②gatsby-plugin-manifestのオプションに配置する
+③gaysby-react-helmetのオプションに配置する
+
+今回は①を実装する
+理由は今後SVGを作成することは十分にあるから　でもdrawio１択で作成するとは限らない　まだ調べてないから
+作成したSVGをicoに変換できるプラグインがあるから
+チョット迷ってきた　このプラグインはこのためだけ　マニフェストは多分必須　やっぱりマニフェストで実装する
+今回は②で実装する 
+ちがう、これはモバイルに対しての問題解決法のため、ファビコンに特化していない
+やっぱり①でやる
+
+ファビコンまとめは別記事にする
+プラグインまとめ記事作っとく　日々更新で
 
 - root/staticにfavicon.icoファイルを置く
   →ここからは多分→ビルドした時にroot/publicにコピーされる→以降呼び出される
@@ -245,7 +262,7 @@ https://zenn.dev/kaito18/articles/1b7a813375ac69
 - catさんはstatic,manifest両方に設定しているが、favicon.icoのほうはあやしい
 　→ブラウザのキャッシュから考えるがベストだが嵌りそうなのでつぎ
 
-※後日系
+※後日
 ※マークダウン１つは後日			
 - パラメタ系にして取る場合は常にデータが存在することを想定して			
 - プログラムすることでエラーハンドリング
