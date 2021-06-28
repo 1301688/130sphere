@@ -1,10 +1,10 @@
 ---
-title: "⑤Gatsbyの画像とファビコン(守)"
+title: "⑤Gatsbyの画像(守)"
 date: "2021-06-23"
 updateDate: ""
 type: ""
 category: "gatsby"
-description: "⑤Gatsbyの画像とファビコン（守）"
+description: "⑤Gatsbyの画像（守）"
 emoji: "🍃"
 topImage: ""
 ---
@@ -222,45 +222,7 @@ https://zenn.dev/kaito18/articles/1b7a813375ac69
 
 インストール時に実装、理解が出来るようにする
 
-#### faviconの作成方法
-- favicon.icoファイルの作成方法は情報が少ないため簡単な方法を記述
->- gatsby-plugin-faviconsプラグインで作成する
->  SVGをファビコンに出来る=SVGをdrawioでつくって変換出来るので良い
->  おそらく他にも良い方法があるが、現在はこの方法で作成する
->- Webにあるいずれかのサイトで作成する
-#### faviconを格納するディレクトリまたはファイル
-- 表示させたいfavicon.icoデータをGatsbyプロジェクトで読み取り可能な場所に格納する
-- faviconとはfaivariticonの略のよう
->- root/staticディレクトリ
->- gatsby-config.jsファイル
-#### faviconを設定する
-- 作成したfavicon.icoファイルをGatsbyプロジェクトで読み取り表示出来るように設定する
->- gatsby-plugin-manifestもしくはgatsby-plugin-react-helmetどちらがSEO必須か調べた結果 
->  catさんのconfig,jsを見て判断する && サイトを参考にする && bookを参考にする
-答え　catも公式もhelmet
 
-設定方法
-①staticディレクトリに配置する
-②gatsby-plugin-manifestのオプションに配置する
-③gaysby-react-helmetのオプションに配置する
-
-今回は①を実装する
-理由は今後SVGを作成することは十分にあるから　でもdrawio１択で作成するとは限らない　まだ調べてないから
-作成したSVGをicoに変換できるプラグインがあるから
-チョット迷ってきた　このプラグインはこのためだけ　マニフェストは多分必須　やっぱりマニフェストで実装する
-今回は②で実装する 
-ちがう、これはモバイルに対しての問題解決法のため、ファビコンに特化していない
-やっぱり①でやる
-
-ファビコンまとめは別記事にする
-プラグインまとめ記事作っとく　日々更新で
-
-- root/staticにfavicon.icoファイルを置く
-  →ここからは多分→ビルドした時にroot/publicにコピーされる→以降呼び出される
-- gatsby-plugin-manifestで設定する
-※ブラウザで一度作成されたファビコンは残り続けるので、明示的に削除する必要性がある
-- catさんはstatic,manifest両方に設定しているが、favicon.icoのほうはあやしい
-　→ブラウザのキャッシュから考えるがベストだが嵌りそうなのでつぎ
 
 ※後日
 ※マークダウン１つは後日			

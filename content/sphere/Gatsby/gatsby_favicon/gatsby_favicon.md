@@ -1,0 +1,67 @@
+---
+title: "Gatsbyのfavicon"
+date: "2021-06-29"
+updateDate: ""
+type: ""
+category: "javascript, css, react, node, gatsby.typescript, all"
+description: "Gatsbyのfavicon"
+emoji: "🍃"
+topImage: ""
+---
+
+#### 記事構成
+
+- faviconの設定
+- faviconの作成
+
+#### 目的
+
+> gatsby-starterではじめるプロジェクトはfaviconの  
+> 基本設定がgatsbyの状態なのでこれを変更したい
+
+#### 解決策
+
+1. 表示したいfaviconを準備する
+2. 表示したいfaviconを設定する
+
+#### 1.表示したいfaviconの準備
+- faviconの準備=favicon.icoファイルの準備
+- favicon.icoファイルを作成する方法▼
+①gatsby-plugin-faviconsプラグインで作成する  
+> SVGをfaviconに変換できるプラグイン　詳細はこっちで>> #gatsby_plugin記事へのリンクまたは後記  
+> vscode内のdrawioでSVGをつくって変換出来る方法があることを考えると🙆‍♂️ 
+②Webに落ちているサイトで作成する
+> すでに持っている素材をfavicon.icoファイルに変換出来る様子
+③SVGファイルをGatsbyプロジェクト内でfaviconとして扱えるようにする
+> pluginで実現可能 詳細はこっちで>> #gatsby_manifest記事へのリンクまたは後記
+
+#### 2.表示したいfaviconを設定
+- 設定方法は以下3つ▼
+①root/staticディレクトリに配置する
+②gatsby-plugin-manifestのオプションに配置する
+③gaysby-react-helmetのオプションに配置する
+
+①root/staticディレクトリに配置する
+- 初期設定のroot/static/favicon.icoファイルを  
+  使用したいfavicon.icoファイルに置き換える 
+②gatsby-plugin-manifestのオプションに配置する
+- 応用方法 詳細はgatsby-plugin-manifest記事へ>>リンクまたは後記
+③gaysby-react-helmetのオプションに配置する
+- 応用方法 あまり使用されていない様子
+
+#### 上記設定が適応される理由　原理
+- root/staticにfavicon.icoファイルを置く
+  →ここからは多分→ビルドした時にroot/publicにコピーされる→以降呼び出される
+- gatsby-plugin-manifestで設定する
+※ブラウザで一度作成されたファビコンは残り続けるので、明示的に削除する必要性がある
+- catさんはstatic,manifest両方に設定しているが、favicon.icoのほうはあやしい
+　→ブラウザのキャッシュから考えるがベストだが嵌りそうなのでつぎ
+
+#### まとめ
+- ファビコンを自分好みのものにできるとプロジェクト自体に愛着が湧く
+- 自分で意図したコーディング、設定ができていることに実感
+- 絵文字を設定できたりもする　参考サイト>>cat参考 Zenn
+
+プラグインまとめ記事作っとく　日々更新で
+
+
