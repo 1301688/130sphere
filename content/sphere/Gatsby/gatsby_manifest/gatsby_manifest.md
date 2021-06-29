@@ -1,22 +1,22 @@
 ---
-title: " Reactの基本 "
-date: "2021-06-"
+title: "Gatsbyのマニフェスト"
+date: "2021-06-29"
 updateDate: ""
 type: ""
-category: "javascript, css, react, node, gatsby.typescript, all"
-description: "Reactの基本"
-emoji: "コントロール＋コマンド＋スペース"
+category: "gatsby"
+description: "Gatsbyのマニフェスト"
+emoji: "🍃"
 topImage: ""
 ---
 
 #### 記事構成　冒頭まとめ項目　
 
 #### 目的　達成したい箇所 ユースケース
-
+- マニフェストを設定すると何がメリットなのか？を理解したい
 #### 問題　理解できていない箇所
-
+- マニフェストを設定することでどのような効果があるのか理解できていない
 #### 解決策　対策手順の概要
-
+- gatsby-plugin-manifestを理解する
 #### 実行手順　順序立てた目的達成手順　
 
 #### 上記の原理　なぜそうなるのか

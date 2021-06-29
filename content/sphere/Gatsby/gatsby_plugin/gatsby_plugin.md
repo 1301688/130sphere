@@ -1,24 +1,24 @@
 ---
-title: " Reactの基本 "
-date: "2021-06-"
+title: "Gatsbyのplugin"
+date: "2021-06-29"
 updateDate: ""
 type: ""
-category: "javascript, css, react, node, gatsby.typescript, all"
-description: "Reactの基本"
-emoji: "コントロール＋コマンド＋スペース"
+category: "gatsby"
+description: "Gatsbyのplugin"
+emoji: "🍃"
 topImage: ""
 ---
 
-#### 記事構成　冒頭まとめ項目　
+#### 記事構成　冒頭まとめ項目
 
 #### 目的　達成したい箇所 ユースケース
-
+- 充実したGatsbyAppの作成
 #### 問題　理解できていない箇所
-
+- Gatsbyの各種プラグインの種類、用途、設定方法、ユースケースが理解できていない
 #### 解決策　対策手順の概要
-
-#### 実行手順　順序立てた目的達成手順　
-
+- 主要プラグインの使い方、ユースケース、設定方法を施行しながら記録し、理解する
+#### 実行手順　順序立てた目的達成手順
+- 関連で分けて書く　画像関連　SEO関連　などなど
 #### 上記の原理　なぜそうなるのか
 #### まとめ　ポジティブ意見
 

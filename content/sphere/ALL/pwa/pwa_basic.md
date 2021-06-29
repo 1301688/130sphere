@@ -1,22 +1,22 @@
 ---
-title: " Reactの基本 "
-date: "2021-06-"
+title: "PWAの基本"
+date: "2021-06-29"
 updateDate: ""
 type: ""
-category: "javascript, css, react, node, gatsby.typescript, all"
-description: "Reactの基本"
-emoji: "コントロール＋コマンド＋スペース"
+category: "all"
+description: "PWAの基本"
+emoji: "📲"
 topImage: ""
 ---
 
 #### 記事構成　冒頭まとめ項目　
 
 #### 目的　達成したい箇所 ユースケース
-
+- PWAとマニフェストの関連と設定することでのメリットの理解がしたい
 #### 問題　理解できていない箇所
-
+- PWAとマニフェストは同じようなものなのかどうかが理解できていない
 #### 解決策　対策手順の概要
-
+- book、公式サイト、その他サイトで比較、学習
 #### 実行手順　順序立てた目的達成手順　
 
 #### 上記の原理　なぜそうなるのか
