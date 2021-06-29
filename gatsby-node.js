@@ -73,12 +73,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // 変数カテゴリ関連するすべてのスフィアの空オブジェクト作成
   let allRelatedSpheres = {}
   // 上で作ったカテゴリーズのカテゴリを引数にぶんまわして... あかん、わからんからfilterメゾットのユースケース調べて！
+  // これランダムに取りたいけど可能かどうかわからない
   categories.forEach(category => {
     let categorySpheres = spheres.filter(sphere => {
       return sphere.node.frontmatter.category === category
     })
     allRelatedSpheres[category] = categorySpheres
-      ? categorySpheres.slice(0, 6)
+      ? categorySpheres.slice(0, 2)
       : []
   })
 

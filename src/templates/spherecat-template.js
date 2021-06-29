@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { Twemoji } from "react-emoji-render"
 import styled from "styled-components"
 import Spherecard from "../components/spherecard"
+import SphereCetegory from "../components/Spherecategory.js"
 
 // import SEO from "../components/seo"
 
@@ -38,6 +39,7 @@ class CategoryTemplate extends React.Component {
             </h3>
           )
         })}
+        <SphereCetegory location={location} />
       </Layout>
     )
   }

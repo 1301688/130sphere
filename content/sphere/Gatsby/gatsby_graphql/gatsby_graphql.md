@@ -1,15 +1,22 @@
 ---
-title: "GatsbyのFooter"
-date: "2021-06-29"
+title: "GatsbyのGraphQL"
+date: "2021-06-30"
 updateDate: ""
 type: ""
 category: "gatsby"
-description: "GatsbyのFooter"
+description: "GatsbyのGraphQL"
 emoji: "🍃"
 topImage: ""
 ---
 
 #### 記事構成　冒頭まとめ項目
+- GraphQLとは
+Gatsbyで構築する際には、GraphQLというクエリ言語を使ってデータにアクセスします。GraphQLでは、データのニーズを宣言的に表現することができます。これを行うのがクエリで、クエリは必要なデータの表現です。
+クエリのシグネチャが、返されたJSONのシグネチャと正確に一致していることに注目してください。これが可能なのは、GraphQLでは、利用可能なデータの表現であるスキーマに対してクエリを実行するからです。GatsbyはGraphiQLというツールを使って、データを整理し、発見可能な状態にしてくれます。
+GraphiQLは、以下のようなことを可能にするUIです。
+1.ブラウザ上でデータに対するクエリを実行できます。
+2.データタイプエクスプローラーでデータの構造を調べることができます。
+GraphQLについてもっと知りたい方は、GatsbyがなぜGraphQLを使っているのか、また、GraphQLを使ったデータのクエリーに関する概念的なガイドをご覧になってください。
 
 #### 目的　達成したい箇所 ユースケース
 
