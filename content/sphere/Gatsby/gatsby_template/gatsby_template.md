@@ -36,8 +36,7 @@ topImage: ""
   - プラグインgatsby-source-filesystemをインストールする
   - 確認方法はプラグインをインストールする前のgraphiQLのallFile,totalcountを見ると0でローカルファイルの情報にアクセスできないことが分かる
   - gatsby-source-filesystemインストール後、上記GraphiQLを確認　gatsby-source-filesystemをインストールしただけではローカルファイルのフォルダにまだアクセスできないことが分かる
-  - 
-
+  
 ## mdxのtodo
 - mdxで記述出来るようにインストールする とりあえず呪文
   - yarn add gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react 
