@@ -3,7 +3,7 @@ title: "Gatsbyのfavicon"
 date: "2021-06-29"
 updateDate: ""
 type: ""
-category: "javascript, css, react, node, gatsby.typescript, all"
+category: "gatsby"
 description: "Gatsbyのfavicon"
 emoji: "🍃"
 topImage: ""
@@ -14,20 +14,19 @@ topImage: ""
 - faviconの準備
 - faviconの設定
 
-#### 目的
-
-> gatsby-starterではじめるプロジェクトはfaviconの  
-> 基本設定がgatsbyの状態なのでこれを変更したい
-
-#### 問題
-
-1. 表示したいfaviconの作り方が理解できていない
+#### 今回の目的　達成したい箇所 ユースケース
+- gatsby-starterではじめるプロジェクトはfaviconの   
+  基本設定がgatsbyの状態なのでこれを変更したい
+#### 問題　理解できていない箇所
+1. 表示したいfaviconファイル(.ico)の作り方が理解できていない
 2. 作ったfaviconをどのように設定すれば良いのか理解できていない
-#### 解決策
+#### 解決策　対策手順の概要
+1. 表示したいfaviconの作成方法を調べて、作成する
+2. 表示したいfaviconの設定方法を調べて、設定する
 
-1. 表示したいfaviconを準備する
-2. 表示したいfaviconを設定する
+#### 前提条件　あれば書く　基本情報や必須条件など
 
+#### 目的達成手順　順序立てた目的達成手順
 #### 1.表示したいfaviconの準備
 - faviconの準備=favicon.icoファイルの準備
 - favicon.icoファイルを作成する方法▼
