@@ -20,7 +20,7 @@ module.exports = {
     // categories_2とか3を作って生成したら複数ページいけそう
     categories: [
       {
-        name: "JavaScript",
+        name: "JavaScript" || "JS", // 左記をif文で書きたい　理由はレスポンシブ　今の所方法がわからない
         slug: "javascript",
         color: "#77c5fc",
       },

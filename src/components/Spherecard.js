@@ -69,6 +69,7 @@ const EmojiContainer = styled.div`
 const PostTitle = styled.h3`
   margin: 0.4em 0.3em;
   font-size: 1em;
+  min-height: 42px;
   @media screen and (max-width: ${props => props.theme.responsive.small}) {
     font-size: 0.8em;
   }
