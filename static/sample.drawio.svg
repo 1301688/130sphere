@@ -1,5 +1,9 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="82" height="82" viewBox="-0.5 -0.5 82 82" content="&lt;mxfile&gt;&lt;diagram id=&quot;Ew4W3_iDeNzyA61tjwIq&quot; name=&quot;ページ1&quot;&gt;lZRNc5swEIZ/DVePQXZJj7HjtIdmJjM+9CyjNWgqWEasA+6v72JJfJh42nIw0rOrlfS+iyOxL7tvVtbFGyowUbJWXSReoiTZPgn+7cHVgc3Gg9xq5VA8gqP+DR6uPb1oBc0skRAN6XoOM6wqyGjGpLXY+jRf7oxmvmstc1iAYybNkv7UigpHn5J05N9B50XYOf7y1UVKGZL91k0hFbaTquIQib1FJDcquz2YXrugi1v3+iA6HMxCRf+yYOsWfEhz8Xfz56JruCwvYF15suPD1j1UeDkZOAy8LTTBsZZZH2zZcWYFlYZnMQ9lUzsTzroD3nfH7xfZ9EKs+6pk8Rfs0aBlUmEFtxRjAooScc5Uds6YL+/nr/wBlqC7F5IbELAEsldO8dFBe998cZi3o5WpR8XExcCkb558qDzqywMv8QN/0r/rrViaXqabOHghoytWJzTy+k5bo/OKxxnrASzWzsgTmHdsNGmcBXqBNLfwj7uEExJhOUl49iUJ64nnZZf3n/KqhZPBHJuVrhqSzEqX5Lo4XvjJ5r3ensG8hVOf+PnYPLFdpdu5f2Kz8E+kq9DaUws38X9byNPxa7zFJn9p4vAH&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="112" height="112" viewBox="-0.5 -0.5 112 112" content="&lt;mxfile&gt;&lt;diagram id=&quot;Ew4W3_iDeNzyA61tjwIq&quot; name=&quot;ページ1&quot;&gt;vZRNb4MwDIZ/DXc+ppZey9ruslMPO2fEQLSAUZoWul8/A06B0UmdNI0Dih/bsfM64EVJ2R6MqItXlKC90JetFz17YfgU+PTuwJWBvxpAbpQcUDCCo/oEhpyXn5WE0yzQImqr6jlMsaogtTMmjMGGw3i7DPW8ai1yWIBjKvSSvilpi4HG4XrkL6DywlUOVpvBUwoXzKVPhZDYTHaNdl6UGEQ7rMo2Ad1p53QZ8vY/eG+NGajsQwnc2EXoMx+OG7NXd1rKIGHJ2FK3dQclnt817G68KZSFYy3SztnQyIkVttRkBbQUp3qYQqZaoMLb3AipqMMENZq+SJT1T1fDGvwA56mw6gpkSutJ8L5/iC+PywpcwFhov+tK9xGwBGuuFMLeFU+Cr+KazWaca+AzK6YzdVDwXcpvO49y04IVv6++uwX/q/4jCifJZvNXCq/nCsdLheM7Ase/15fM8cvpfZPfT7T7Ag==&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-ffffff-1-ffffff-1-s-0">
+            <stop offset="0%" style="stop-color:#FFFFFF"/>
+            <stop offset="100%" style="stop-color:#ffffff"/>
+        </linearGradient>
         <filter id="dropShadow">
             <feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"/>
             <feOffset in="blur" dx="3" dy="3" result="offsetBlur"/>
@@ -9,41 +13,9 @@
         </filter>
     </defs>
     <g filter="url(#dropShadow)">
-        <ellipse cx="35" cy="35" rx="35" ry="35" fill="#fcdcfc" stroke="none" pointer-events="all"/>
-        <ellipse cx="35" cy="35" rx="31" ry="31" fill="none" stroke="none" pointer-events="all"/>
-        <path d="M 21.69 55 C 19.11 55 15.75 52.17 15.75 48.2 L 15.75 26.73 L 53 26.73 L 53 48.38 C 53 51.45 50.37 55 46.89 55 Z" fill="#000000" stroke="none" transform="translate(2,3)" opacity="0.25"/>
-        <path d="M 21.69 55 C 19.11 55 15.75 52.17 15.75 48.2 L 15.75 26.73 L 53 26.73 L 53 48.38 C 53 51.45 50.37 55 46.89 55 Z" fill="#dbcdbd" stroke="none" pointer-events="all"/>
-        <path d="M 15.75 26.73 L 15.75 20.44 C 15.75 17.72 18.18 14 22.43 14 L 46.88 14 C 49.84 14 53 17.04 53 20.81 L 53 26.73 Z" fill="#b4947f" stroke="none" pointer-events="all"/>
-        <path d="M 34.32 45.38 C 29.05 45.38 24.6 40.42 24.6 34.85 C 24.6 28.36 29.42 23.89 34.32 23.89 C 39.77 23.89 44.12 28.67 44.12 34.85 C 44.12 40.85 39.42 45.38 34.32 45.38 Z" fill="#5c5755" stroke="none" pointer-events="all"/>
-        <path d="M 34.32 44.81 C 28.98 44.81 25.13 39.69 25.13 34.85 C 25.13 27.66 30.6 24.4 34.32 24.4 C 39.1 24.4 43.62 28.54 43.62 34.85 C 43.62 39.79 39.8 44.81 34.32 44.81 Z" fill="#eee6de" stroke="none" pointer-events="all"/>
-        <path d="M 34.32 43.79 C 29.81 43.79 26.04 39.64 26.04 34.85 C 26.04 28.68 30.67 25.46 34.36 25.46 C 38.18 25.46 42.73 28.61 42.73 34.87 C 42.73 39.43 39.21 43.79 34.32 43.79 Z" fill="#3b3d43" stroke="none" pointer-events="all"/>
-        <path d="M 34.32 39.02 C 32.38 39.02 30.47 37.29 30.47 34.85 C 30.47 31.9 31.94 30.2 34.32 30.2 C 36.71 30.2 38.34 32.19 38.34 34.85 C 38.34 37.22 36.68 39.02 34.32 39.02 Z" fill="#4c4849" stroke="none" pointer-events="all"/>
-        <path d="M 34.32 38.38 C 32.63 38.39 30.87 36.9 30.87 34.85 C 30.87 32.63 32.35 30.86 34.32 30.86 C 36.42 30.86 37.65 32.54 37.65 34.85 C 37.65 36.88 36.35 38.38 34.32 38.38 Z" fill="#3b3b3f" stroke="none" pointer-events="all"/>
-        <path d="M 26.05 35.43 C 25.68 28.86 30.69 25.46 34.36 25.46 C 39.18 25.46 43.03 29.89 42.72 35.39 C 40.07 36.52 37.72 36.86 34.29 36.86 C 30.58 36.86 28.56 36.36 26.05 35.43 Z" fill-opacity="0.1" fill="#ffffff" stroke="none" pointer-events="all"/>
-        <rect x="15.75" y="14" width="0" height="0" fill="none" stroke="#000000" transform="translate(2,3)" opacity="0.25"/>
-        <rect x="15.75" y="14" width="0" height="0" fill="none" stroke="#ffffff" pointer-events="all"/>
-        <path d="M 35.43 31.13 L 36.15 29.18 C 37.18 29.52 37.97 30.33 38.56 31.05 L 37.1 32.57 C 36.74 31.9 36.19 31.5 35.43 31.13 Z" fill="#b9b7b7" stroke="none" pointer-events="all"/>
-        <path d="M 37.41 32.92 L 38.91 31.66 C 39.14 32.11 39.42 32.97 39.54 33.53 L 37.72 34.24 C 37.65 33.68 37.58 33.34 37.41 32.92 Z" fill="#b9b7b7" stroke="none" pointer-events="all"/>
-        <path d="M 18.47 26.62 L 18.47 15.31 C 19.09 14.84 19.67 14.54 20.24 14.35 L 20.24 26.62 Z" fill="#f47888" stroke="none" pointer-events="all"/>
-        <path d="M 20.24 26.62 L 20.24 14.35 C 20.86 14.14 21.46 14.05 22.05 14 L 22.05 26.62 Z" fill="#fedb72" stroke="none" pointer-events="all"/>
-        <path d="M 22.05 26.62 L 22.05 14 L 23.8 14 L 23.8 26.62 Z" fill="#a2d8b8" stroke="none" pointer-events="all"/>
-        <path d="M 23.8 26.62 L 23.8 14 L 25.68 14 L 25.68 26.62 Z" fill="#93b6de" stroke="none" pointer-events="all"/>
-        <path d="M 44.22 24.96 C 43.82 24.96 42.79 24.41 42.79 23.27 L 42.8 18.66 C 42.8 17.8 43.51 17.04 44.2 17.04 L 48.67 17.03 C 49.25 17.03 50 17.74 50 18.61 L 49.99 23.31 C 49.99 24.24 49.27 24.97 48.37 24.97 Z" fill="#5f6266" stroke="none" pointer-events="all"/>
-        <path d="M 46.27 24.65 C 44.97 24.65 43.05 23.31 43.05 21.1 C 43.05 18.85 44.7 17.25 46.66 17.25 C 48.16 17.25 49.76 18.94 49.76 21.1 C 49.76 22.74 48.25 24.65 46.27 24.65 Z" fill="#5e6062" stroke="none" pointer-events="all"/>
-        <path d="M 46.35 23.42 C 45.29 23.42 44.16 22.38 44.16 21.1 C 44.16 19.57 45.27 18.44 46.43 18.44 C 47.6 18.44 48.58 19.62 48.64 21.09 C 48.64 22.36 47.73 23.42 46.35 23.42 Z" fill="#6c6a6a" stroke="none" pointer-events="all"/>
-        <path d="M 46.36 23.04 C 47.55 23.01 48.32 22.12 48.32 21.14 C 48.32 19.91 47.33 18.78 46.41 18.78 C 45.52 18.78 44.54 19.79 44.46 21 C 44.46 22.01 45.28 23.04 46.36 23.04 Z" fill="#66686a" stroke="none" pointer-events="all"/>
-        <path d="M 46.42 21.9 C 45.99 21.9 45.57 21.49 45.57 20.97 C 45.57 20.43 45.96 20.04 46.46 20.04 C 46.96 20.04 47.26 20.55 47.26 21.01 C 47.26 21.48 46.85 21.9 46.42 21.9 Z" fill="#797777" stroke="none" pointer-events="all"/>
-        <path d="M 42.79 20.92 L 42.79 18.66 C 42.79 17.87 43.45 17.04 44.16 17.04 L 48.63 17.03 C 49.28 17.03 50.01 17.76 50.01 18.61 L 50 20.91 C 49.01 21.35 47.49 21.8 46.44 21.8 C 45.66 21.8 44.15 21.54 42.79 20.92 Z" fill-opacity="0.1" fill="#ffffff" stroke="none" pointer-events="all"/>
-        <rect x="15.75" y="14" width="0" height="0" fill="none" stroke="#000000" transform="translate(2,3)" opacity="0.25"/>
-        <rect x="15.75" y="14" width="0" height="0" fill="none" stroke="#ffffff" pointer-events="all"/>
-        <path d="M 46.93 19.11 L 47.4 17.99 C 47.98 18.29 48.33 18.68 48.66 19.07 L 47.87 19.89 C 47.67 19.58 47.3 19.2 46.93 19.11 Z" fill="#c7c7c7" stroke="none" pointer-events="all"/>
-        <path d="M 47.95 20.04 L 48.84 19.36 C 49.03 19.72 49.12 20.07 49.17 20.4 L 48.18 20.75 C 48.14 20.5 48.06 20.3 47.95 20.04 Z" fill="#c7c7c7" stroke="none" pointer-events="all"/>
-        <path d="M 19.6 29.79 C 18.99 29.79 18.13 29.1 18.13 28.15 L 18.16 27.15 C 18.16 26.4 18.97 25.65 19.56 25.65 L 24.52 25.64 C 25.38 25.64 26.06 26.39 26.06 27.37 L 26.05 28.13 C 26.05 28.78 25.48 29.78 24.56 29.78 Z" fill="#74706d" stroke="none" pointer-events="all"/>
-        <path d="M 24.1 27.26 C 24.22 27.13 24.46 27.05 24.69 27.05 C 24.94 27.04 25.31 27.3 25.3 27.58 L 25.3 28.81 L 24.86 28.81 L 24.86 28.59 C 24.79 28.72 24.67 28.82 24.33 28.83 C 24.13 28.83 23.86 28.51 23.98 28.14 C 24.04 27.95 24.13 27.85 24.29 27.78 C 24.6 27.73 24.75 27.75 24.83 27.8 C 24.83 27.68 24.86 27.52 24.6 27.54 C 24.34 27.56 24.23 27.6 24.11 27.65 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
-        <path d="M 24.76 28.06 C 24.57 28.04 24.48 28.07 24.43 28.1 C 24.32 28.2 24.38 28.38 24.53 28.43 C 24.62 28.44 24.7 28.39 24.76 28.31 Z" fill="#74706d" stroke="none" pointer-events="all"/>
-        <path d="M 18.75 28.78 L 18.75 28.35 L 19.03 28.34 L 19.03 27.13 L 18.76 27.11 L 18.76 26.65 L 19.81 26.64 L 19.83 27.12 L 19.6 27.13 L 19.59 28.32 L 19.81 28.32 L 19.81 28.78 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
-        <path d="M 20.04 28.76 L 20.02 27.16 L 20.5 27.15 L 20.51 27.34 C 20.62 27.18 20.76 27.09 20.94 27.09 C 21.24 27.09 21.43 27.35 21.43 27.56 L 21.44 28.78 L 20.89 28.78 L 20.89 27.74 C 20.89 27.64 20.86 27.54 20.74 27.54 C 20.61 27.54 20.52 27.67 20.52 27.74 L 20.52 28.73 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
-        <path d="M 21.61 28.21 C 21.81 28.31 21.98 28.45 22.24 28.43 C 22.33 28.43 22.41 28.35 22.39 28.26 C 22.36 28.2 22.18 28.17 21.98 28.16 C 21.66 28.13 21.55 27.83 21.58 27.61 C 21.64 27.26 21.89 27.09 22.11 27.09 C 22.37 27.07 22.58 27.14 22.76 27.25 L 22.75 27.68 C 22.58 27.6 22.44 27.49 22.2 27.49 C 22.13 27.51 22.07 27.54 22.07 27.63 C 22.08 27.72 22.17 27.77 22.3 27.79 C 22.71 27.84 22.84 28.04 22.84 28.27 C 22.85 28.56 22.62 28.84 22.21 28.85 C 21.99 28.85 21.76 28.83 21.58 28.64 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
-        <path d="M 22.84 27.58 L 22.83 27.2 L 23.01 27.21 L 23 26.73 L 23.51 26.73 L 23.52 27.15 L 23.93 27.16 L 23.93 27.57 L 23.51 27.57 L 23.51 28.2 C 23.51 28.4 23.71 28.43 23.93 28.31 L 23.94 28.78 C 23.77 28.86 23.42 28.87 23.25 28.76 C 23.11 28.66 23 28.51 23 28.21 L 23 27.59 Z" fill="#ffffff" stroke="none" pointer-events="all"/>
+        <ellipse cx="50" cy="50" rx="50" ry="50" fill="url(#mx-gradient-ffffff-1-ffffff-1-s-0)" stroke="none" pointer-events="all"/>
+        <ellipse cx="50" cy="50" rx="46" ry="46" fill="none" stroke="none" pointer-events="all"/>
+        <ellipse cx="50" cy="50" rx="40" ry="40" fill="#cc99ff" stroke="none" pointer-events="all"/>
+        <ellipse cx="50" cy="50" rx="36" ry="36" fill="none" stroke="none" pointer-events="all"/>
     </g>
 </svg>
