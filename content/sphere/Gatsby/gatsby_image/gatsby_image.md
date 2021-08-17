@@ -236,7 +236,15 @@ https://zenn.dev/kaito18/articles/1b7a813375ac69
 
 
 ※後日
-※マークダウン１つは後日			
+※マークダウンに画像表示したいケースは後日まとめる
+→Markdownへ画像表示する場合の結論
+  → gatsby-remark-images (マークダウン上に画像表示するプラグイン)		
+  → gatsby-plugin-sharp (画像のリサイズ , 画像の最適化)		
+  → gatsby-remark-relative-images (mdファイルからの相対パスで画像ファイルを指定できる)	
+    ※Mdxをベースにする場合、必要ないプラグイン　逆にerror発生する
+  → configへ上記pluginを記載する時、書く場所に注意
+    →	mdxファイル内で使用する配下のプラグイン gatsby-remark-imagesや
+    → プロジェクト全体に対してのpluginみたいな考え方
 - パラメタ系にして取る場合は常にデータが存在することを想定して			
 - プログラムすることでエラーハンドリング
 
